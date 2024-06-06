@@ -1,0 +1,158 @@
+{
+  "settings": {
+    "name": "jupiter",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#1c2936"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/jupiter_1.png",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://jupitr-swap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nsitemap: https://jupitr-swap.github.io/sitemap.xml\n\n\n\n\n",
+    "mbrsiteDomain": "sbe6vgz6ry",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Jupiter Swap™ | Home Official Site",
+        "meta_descr": "Jupiter Solana Aggregator. The best swap aggregator & infrastructure for Solana - powering best price, token selection and UX for all users and devs.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://jupiter.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/jupiter.png\" alt=\"jupiter\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "u6ZiskzoCT",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#edefeb",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#1c2936\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#1c2936\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Jupiter: Exploring the High-Performance Blockchain Ecosystem</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction :</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  <a href=\"https://jupitr-swap.github.io/\" class=\"text-primary\"><b>Jupiter</b></a> is a high-performance blockchain ecosystem built on the Solana blockchain. It aims to provide a scalable and efficient platform for decentralized applications (dApps) and digital asset management. In this article, we will delve into the features, advantages, and potential impact of Jupiter in revolutionizing the blockchain landscape, fostering innovation, and enabling the next generation of decentralized applications.\n                </p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>I. Understanding Jupiter :</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">1.1. The Solana Blockchain:<br><a href=\"https://jup.ag/\" class=\"text-primary\"><b>Jupiter</b></a> is built on the Solana blockchain, a high-performance blockchain protocol designed to address the scalability limitations of earlier blockchains. Solana utilizes a unique combination of technologies, including a proof-of-history (PoH) consensus mechanism and a Byzantine fault-tolerant (BFT) consensus algorithm, to achieve high throughput and low transaction costs.<br><br>1.2. The Jupiter Ecosystem:<br>Jupiter encompasses a comprehensive ecosystem that includes smart contract capabilities, decentralized exchanges (DEXs), decentralized finance (DeFi) protocols, and cross-chain interoperability. It provides developers with the tools and infrastructure necessary to build and deploy scalable dApps with ease.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>II. Key Features of Jupiter:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  2.1. Scalability and Speed:<br>One of the most significant advantages of Jupiter is its scalability. The Solana blockchain is capable of processing thousands of transactions per second (TPS), enabling near-instantaneous confirmations and significantly reducing transaction fees. This high throughput makes it suitable for applications that require fast and seamless user experiences.<br><br>2.2. Low Transaction Costs:<br>Jupiter leverages the efficiency of the Solana blockchain to minimize transaction costs. By utilizing a novel approach to consensus and network optimization, it enables developers and users to transact on the platform with minimal fees, making it more accessible and cost-effective.<br><br>2.3. Smart Contract Functionality:<br>Jupiter supports smart contracts, allowing developers to build and deploy decentralized applications with ease. Smart contracts enable the execution of self-executing and tamper-resistant agreements, facilitating automated and trustless interactions between parties on the platform.<br><br>2.4. Decentralized Exchanges (DEXs):<br>Jupiter provides a decentralized exchange platform where users can trade digital assets directly from their wallets. These DEXs leverage the high throughput and low latency of the Solana blockchain to offer fast and efficient trading experiences, eliminating the need for intermediaries and enhancing the security of transactions.<br><br>2.5. Cross-Chain Interoperability:<br>Jupiter aims to enable seamless interoperability with other blockchains and protocols. By integrating with various networks through bridging mechanisms, it allows assets and data to flow freely across different chains, expanding the possibilities for collaboration and innovation in the decentralized ecosystem.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>III. Advantages of Jupiter:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">3.1. High Performance:<br>Jupiter's scalability and speed make it highly suitable for applications that require real-time data processing and high transaction throughput. This performance advantage opens up opportunities for a wide range of use cases, including decentralized finance, gaming, non-fungible tokens (NFTs), and more.<br><br>3.2. Cost-Effectiveness:<br>The low transaction costs associated with Jupiter make it an attractive option for developers and users. With reduced fees, individuals and businesses can participate in the ecosystem without the burden of high transaction expenses, fostering broader adoption and inclusivity.<br><br>3.3. Developer-Friendly Infrastructure:<br>Jupiter provides a developer-friendly environment with robust tooling and documentation. The ecosystem offers software development kits (SDKs), libraries, and other resources that simplify the process of building and deploying dApps on the Solana blockchain. This developer-centric approach encourages innovation and accelerates the growth of the ecosystem.<br><br>3.4. Enhanced Security and Reliability:<br>The Byzantine fault-tolerant consensus algorithm employed by Jupiter ensures the security and reliability of the network. This consensus mechanism guards against malicious attacks and guarantees the integrity of transactions and data stored on the blockchain, providing users with peace of mind and confidence in the system.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>IV. Potential Impact of Jupiter:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">4.1. Fostering Innovation:<br>Jupiter's high-performance capabilities and developer-friendly infrastructure have the potential to foster innovation in the blockchain space. The scalability and low transaction costs enable the creation of new and sophisticated dApps that were previously impractical on other blockchains. This can lead to groundbreaking solutions and transformative applications across various industries.<br><br>4.2. Advancing DeFi:<br>The speed and efficiency of Jupiter make it an ideal platform for decentralized finance applications. It provides a solid foundation for DeFi protocols, such as lending and borrowing platforms, yield farming, decentralized exchanges, and more. The scalability of the Solana blockchain allows for increased liquidity and improved user experiences within the DeFi ecosystem.<br><br>4.3. Cross-Chain Collaboration:<br>Jupiter's cross-chain interoperability capabilities open up avenues for collaboration and synergy with other blockchain networks. By enabling seamless asset transfersand data exchange between different chains, Jupiter promotes cross-chain innovation and facilitates the creation of robust and interconnected decentralized ecosystems. This interoperability can lead to increased liquidity, improved user experiences, and a broader range of opportunities for developers and users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>V. Conclusion:</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                  Jupiter represents a significant advancement in the blockchain ecosystem, offering a high-performance platform that addresses scalability and efficiency challenges. Built on the Solana blockchain, Jupiter provides developers with the tools and infrastructure needed to build scalable dApps, while also offering users fast and cost-effective transactions. With its focus on scalability, low transaction costs, and cross-chain interoperability, Jupiter has the potential to drive innovation, advance decentralized finance, and foster collaboration across different blockchain networks. As the blockchain landscape continues to evolve, Jupiter is poised to play a pivotal role in shaping the future of decentralized applications and digital asset management.\n                </p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "u6ZisEdnca",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
